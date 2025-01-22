@@ -6,9 +6,7 @@ class Clock extends React.Component{
   componentDidMount(){
     this.clockTimer = setInterval(()=> this.tick(), 1000)
   }
-  // componentWillUnmount(){
-  //   clearInterval(this.clockTimer)
-  // }
+ 
   handleClick = ()=>{
     this.setState({
       locale: 'en-US',
